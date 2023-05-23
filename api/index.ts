@@ -1,7 +1,7 @@
-import api from '../../src/api'
-import models from '../../src/mail/models'
+import cors from '../cors'
+import models from '../mail/models'
 
-const handler = (req, res) => {
+export default cors((req, res) => {
   const entries = Object.entries(models)
   const modelsList = entries.map(([model, [, config]]) => ({
     model,
@@ -9,8 +9,4 @@ const handler = (req, res) => {
   }))
 
   res.json({ status: 'success', data: { models: modelsList } })
-}
-
-export default api({
-  get: handler,
 })
