@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "dev": "vercel dev"
-  },
   "dependencies": {
     "nodemailer": "^6.9.2"
   },
