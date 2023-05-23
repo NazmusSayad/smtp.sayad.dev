@@ -1,8 +1,13 @@
 {
+  "scripts": {
+    "test": "vercel dev"
+  },
   "dependencies": {
+    "cors": "^2.8.5",
     "nodemailer": "^6.9.2"
   },
   "devDependencies": {
-    "@types/node": "^20.2.3"
+    "@types/node": "^20.2.3",
+    "vercel": "^29.4.0"
   }
 }
