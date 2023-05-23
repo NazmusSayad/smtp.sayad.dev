@@ -1,5 +1,4 @@
 import api from '../../src/api'
-import cors from 'cors'
 import models from '../../src/mail/models'
 
 const handler = (req, res) => {
@@ -13,5 +12,5 @@ const handler = (req, res) => {
 }
 
 export default api({
-  get: [cors(), handler],
+  get: handler,
 })
